@@ -126,5 +126,5 @@ toh_iterative(num_of_disks, src, aux, dest)
 
 print(timeit.timeit(setup=setup,
                     stmt=code,
-                    number=1)
+                    number=2)
                     )
