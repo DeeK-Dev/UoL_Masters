@@ -9,7 +9,7 @@ print(lst3)
 # and the range together to create a new list of tuples.
 
 lst1 = ["Energy", "Agriculture", "Industry", "Technology", "Finance", "Forestry", "Transport"]
-rng1 = range(1,8)
+rng1 = range(1, 8)
 lst = list(zip(lst1, rng1))
 print(lst)
 
@@ -24,5 +24,3 @@ lst1 = ["Mike", "Danny", "Jim", "Annie"]
 lst2 = [4, 12, 7, 19]
 sorted_lst = sorted(list(zip(lst1, lst2)))
 print(sorted_lst)
-
-#
