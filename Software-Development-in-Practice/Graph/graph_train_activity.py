@@ -48,15 +48,24 @@ def find_shortest_path(graph, start, end, shortest_length=-1, path=[]):
 
 
 graph_elements = {
-    "a": ["b", "c"],
-    "b": ["a", "d"],
-    "c": ["a", "d"],
-    "d": ["e"],
-    "e": ["d"]
+    "a": ["b", "j", "d"],
+    "b": ["a", "c"],
+    "c": ["b", "d", "h"],
+    "d": ["a", "c", "e"],
+    "e": ["d", "f"],
+    "f": ["g", "e"],
+    "g": ["f"],
+    "h": ["c", "i", "l", "n"],
+    "i": ["h", "j"],
+    "j": ["k", "a"],
+    "k": ["j", "l"],
+    "l": ["h", "m"],
+    "m": ["l"],
+    "n": ["h"]
 }
 
-stationFrom = "a"
-stationTo = "e"
+stationFrom = "f"
+stationTo = "m"
 print("From: " + stationFrom)
 print("To: " + stationTo)
 print("\nSearching for a path...")
