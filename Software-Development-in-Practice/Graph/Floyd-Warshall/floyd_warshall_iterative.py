@@ -13,7 +13,7 @@ V = 4
 # Solves all pair shortest path
 # via Floyd Warshall Algorithm
 
-def floydWarshall(graph):
+def floyd_warshall(graph):
     """ dist[][] will be the output
        matrix that will finally
         have the shortest distances
@@ -56,11 +56,11 @@ def floydWarshall(graph):
                 dist[i][j] = min(dist[i][j],
                                  dist[i][k] + dist[k][j]
                                  )
-    printSolution(dist)
+    print_solution(dist)
 
 
 # A utility function to print the solution
-def printSolution(dist):
+def print_solution(dist):
     print("Following matrix shows the shortest distances\
  between every pair of vertices")
     for i in range(V):
@@ -74,4 +74,4 @@ def printSolution(dist):
 
 
 # Print the solution
-floydWarshall(data_set_1)
+floyd_warshall(data_set_1)
