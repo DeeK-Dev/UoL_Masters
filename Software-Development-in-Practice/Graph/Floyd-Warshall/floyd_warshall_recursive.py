@@ -1,5 +1,5 @@
 """
-Recursive version of the Floyd-Warshall algorithm that  finds the shortest path between "i" and "j"
+Recursive version of the Floyd-Warshall algorithm that finds the shortest path between "i" and "j"
 with "k" as the intermediary
 """
 

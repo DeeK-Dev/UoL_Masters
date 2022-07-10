@@ -1,5 +1,5 @@
 """
-Iterative version of the Floyd-Warshall algorithm that finds all paths between selected edges.
+Iterative version of the Floyd-Warshall algorithm that finds all paths between all paired vertices.
 """
 
 # Number of vertices
@@ -16,3 +16,4 @@ def floyd_iterative(graph):
         for p in range(nbr_vert):
             for q in range(nbr_vert):
                 dist[p][q] = min(dist[p][q], dist[p][r] + dist[r][q])
+
