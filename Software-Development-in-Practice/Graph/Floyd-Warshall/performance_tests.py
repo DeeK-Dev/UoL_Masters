@@ -3,7 +3,7 @@
 import time
 from data import data_set_1
 
-# Import functions from functions folder
+# Import functions
 from floyd_warshall_recursive import solve_paths
 from floyd_warshall_iterative import floyd_warshall
 
