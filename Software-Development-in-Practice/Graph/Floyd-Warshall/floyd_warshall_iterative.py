@@ -57,6 +57,7 @@ def floyd_warshall(graph):
                                  dist[i][k] + dist[k][j]
                                  )
     print_solution(dist)
+    return dist
 
 
 # A utility function to print the solution
