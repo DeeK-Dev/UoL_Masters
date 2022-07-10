@@ -5,7 +5,7 @@ from data import data_set_1
 
 # Import functions from functions folder
 from floyd_warshall_recursive import solve_paths
-from floyd_warshall_iterative import floyd_iterative
+from floyd_warshall_iterative import floydWarshall
 
 
 def performance_comparison():
@@ -19,7 +19,7 @@ def performance_comparison():
 
     started_at = time.time()
     for x in range(1000):
-        floyd_iterative(data_set_1)
+        floydWarshall(data_set_1)
     elapsed_iterative_time = time.time() - started_at
 
     return elapsed_recursive_time, elapsed_iterative_time
