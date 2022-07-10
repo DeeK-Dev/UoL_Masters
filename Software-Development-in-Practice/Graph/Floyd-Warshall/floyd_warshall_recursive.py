@@ -6,19 +6,19 @@ with "k" as the intermediary
 from itertools import product
 
 
-def shortest_path(i, j, k, w):
+def shortest_path(start, end, inter, graph):
     """
     Recursive call to shortest_path function
     """
 
-    if k == 0:
-        if i == j:
+    if inter == 0:
+        if start == end:
             return 0
-        return w[i][j]
+        return graph[start][end]
     # Recursive call to the function
-    return min(shortest_path(i, j, k - 1, w),
-               shortest_path(i, k, k - 1, w)
-               + shortest_path(k, j, k - 1, w))
+    return min(shortest_path(start, end, inter - 1, graph),
+               shortest_path(start, inter, inter - 1, graph)
+               + shortest_path(inter, end, inter - 1, graph))
 
 
 def solve_paths(graph):
